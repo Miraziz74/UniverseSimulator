@@ -1,0 +1,138 @@
+body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #000;
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+        #info {
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            text-align: center;
+            z-index: 100;
+            pointer-events: none;
+        }
+        #controls {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            z-index: 100;
+            background: rgba(0,0,0,0.7);
+            padding: 15px;
+            border-radius: 8px;
+            max-width: 300px;
+            box-shadow: 0 0 15px rgba(0, 150, 255, 0.5);
+        }
+        #sim-selector {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 100;
+            background: rgba(0,0,0,0.7);
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 150, 255, 0.3);
+        }
+        #educational-info {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 100;
+            background: rgba(0,0,0,0.7);
+            padding: 15px;
+            border-radius: 8px;
+            max-width: 300px;
+            box-shadow: 0 0 10px rgba(0, 255, 150, 0.3);
+            pointer-events: auto;
+        }
+        button {
+            background: linear-gradient(to bottom, #444, #333);
+            color: white;
+            border: 1px solid #555;
+            padding: 8px 12px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 14px;
+        }
+        button:hover {
+            background: linear-gradient(to bottom, #555, #444);
+            box-shadow: 0 0 8px rgba(100, 200, 255, 0.5);
+        }
+        select, input {
+            background: #222;
+            color: white;
+            border: 1px solid #444;
+            padding: 6px;
+            margin: 5px 0;
+            border-radius: 5px;
+            width: 100%;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-size: 14px;
+        }
+        .sim-controls {
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+        .active {
+            display: block;
+        }
+        .slider-container {
+            display: flex;
+            align-items: center;
+        }
+        .slider-container input[type="range"] {
+            flex-grow: 1;
+            margin: 0 10px;
+        }
+        .slider-value {
+            min-width: 30px;
+            text-align: right;
+        }
+        #planet-selector {
+            margin-bottom: 10px;
+        }
+        h1, h2, h3 {
+            margin-top: 0;
+            text-shadow: 0 0 5px rgba(255,255,255,0.3);
+        }
+        .info-card {
+            background: rgba(0,0,0,0.5);
+            border-left: 3px solid #4af;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .close-btn {
+            float: right;
+            background: transparent;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #educational-info h3 {
+            color: #4af;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        #gravity-effects {
+            margin-top: 15px;
+            border-top: 1px solid #444;
+            padding-top: 10px;
+        }
+        #celestial-interactions {
+            margin-top: 15px;
+        }
+        #time-controls {
+            margin-top: 15px;
+            border-top: 1px solid #444;
+            padding-top: 10px;
+        }
